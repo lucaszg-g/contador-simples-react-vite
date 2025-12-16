@@ -1,3 +1,5 @@
+import './style.css';
+
 interface ButtonProps {
     text: string;
     onClick: () => void;
@@ -6,7 +8,7 @@ interface ButtonProps {
 
 function Button({ text, onClick, ...rest } : ButtonProps) {
     return (
-        <button onClick={onClick} {...rest}>
+        <button className="btn" onClick={onClick}  {...rest}>
             {text}
         </button>
     );
